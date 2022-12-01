@@ -1,7 +1,7 @@
 import consumer from "./consumer"
 
 if(location.pathname.match(/\/items\/\d/)){
-
+  console.log("読み込み完了")
 
   consumer.subscriptions.create("CommentChannel", {
     connected() {
