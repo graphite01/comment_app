@@ -2,7 +2,6 @@ import consumer from "./consumer"
 
 if(location.pathname.match(/\/items\/\d/)){
 
-  consumer.subscriptions.create("CommentChannel", {
     connected() {
       // Called when the subscription is ready for use on the server
     },
